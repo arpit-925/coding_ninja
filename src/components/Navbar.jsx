@@ -7,7 +7,7 @@ const Navbar = () => (
     <div className="flex items-center gap-10">
       {/* Dynamic Logo from our constants */}
       <img 
-        src={IMAGES.LOGO} 
+        src="https://institute.careerguide.com/wp-content/uploads/2024/02/Coding-Ninjas-1024x512.jpg"
         alt="Coding Ninjas" 
         className="h-8 cursor-pointer" 
       />

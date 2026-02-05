@@ -1,3 +1,19 @@
+export const IMAGES = {
+  LOGO: "https://files.codingninjas.in/new-logo-03-11400.svg",
+  HERO_THUMBNAIL: "https://files.codingninjas.in/group-11822-17676.png",
+  
+  // Unsplash Tech & Education Images
+  COURSE_DSA: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&q=80", // Algorithm/Code
+  COURSE_WEB: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&q=80", // Web Design
+  COURSE_ML: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80",  // AI/Data
+  
+  // Professional Mentor Portraits from Unsplash
+  MENTOR_ANKUSH: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80", // Tech Executive
+  MENTOR_NIDHI: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",  // Tech Lead
+  MENTOR_MANISHA: "https://img.freepik.com/premium-photo/portrait-happy-graduate-posing_1148666-1792.jpg", // Software Engineer
+  MENTOR_ARPIT: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80",  // MERN Developer
+};
+
 export const NAV_LINKS = ["Courses", "Scholarships", "Practice", "Events"];
 
 export const COURSES = [
@@ -5,32 +21,31 @@ export const COURSES = [
     id: 1, 
     title: "Full Stack Web Development", 
     cat: "Web Dev", 
-    img: "https://learnnex.in/wp-content/uploads/2024/04/Full-Stack-Web-Development.png", 
+    img: IMAGES.COURSE_WEB, 
     tag: "Job Bootcamp" 
   },
   { 
     id: 2, 
     title: "Data Structures & Algorithms", 
     cat: "DSA", 
-    img: "https://yourtechsalt.com/wp-content/uploads/2017/10/dsa-categories-1024x585.png", 
+    img: IMAGES.COURSE_DSA, 
     tag: "Most Popular" 
+  },
+  { 
+    id: 3, 
+    title: "Machine Learning Masterclass", 
+    cat: "Data Science", 
+    img: IMAGES.COURSE_ML, 
+    tag: "Advanced" 
   }
 ];
 
 export const MENTORS = [
-  { name: "Ankush Singla", role: "Co-founder, IIT Delhi", img: "https://tse2.mm.bing.net/th/id/OIP.ecyGrfWx5iT8xEqX7LG7LQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" },
-  { name: "Nidhi Agarwal", role: "Co-founder, IIT Delhi", img: "https://tse2.mm.bing.net/th/id/OIP.AzD_dsO7A4vbeqZF9nlfmwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" }
+  { name: "Ankush Singla", role: "Co-founder, IIT Delhi", img: IMAGES.MENTOR_ANKUSH },
+  { name: "Nidhi Agarwal", role: "Co-founder, IIT Delhi", img: IMAGES.MENTOR_NIDHI },
+  { name: "Manish Khattar", role: "SDE @ Google", img: IMAGES.MENTOR_MANISHA },
+  { name: "Arpit Mishra", role: "MERN Expert, AKGEC", img: IMAGES.MENTOR_ARPIT }
 ];
-
-export const IMAGES = {
-  LOGO: "https://files.codingninjas.in/new-logo-03-11400.svg",
-  HERO_THUMBNAIL: "https://files.codingninjas.in/group-11822-17676.png",
-  // Using high-quality coding placeholders if official ones fail
-  COURSE_DSA: "https://yourtechsalt.com/wp-content/uploads/2017/10/dsa-categories-1024x585.png",
-  COURSE_WEB: "https://learnnex.in/wp-content/uploads/2024/04/Full-Stack-Web-Development.png",
-  MENTOR_ANKUSH: "https://img.freepik.com/premium-photo/portrait-little-boy-wide-smile-close-up-ai-generated_868749-1034.jpg",
-  MENTOR_NIDHI: "https://tse2.mm.bing.net/th/id/OIP.AzD_dsO7A4vbeqZF9nlfmwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
-};
 
 export const FOOTER_LINKS = {
   products: ["Courses", "Try for Free", "Scholarship", "Success Stories"],
