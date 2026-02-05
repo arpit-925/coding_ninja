@@ -3,7 +3,8 @@ import React from 'react';
 const Navbar = () => (
   <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 py-4 px-6 md:px-12 flex justify-between items-center">
     <div className="flex items-center gap-10">
-      <img src="https://www.codingninjas.com/assets-landing/images/CN-logo.svg" alt="Coding Ninjas" className="h-8" />
+      <img 
+      src="https://files.codingninjas.in/new-logo-03-11400.svg" alt="Coding Ninjas" className="h-8" />
       <div className="hidden lg:flex gap-8 font-semibold text-gray-600">
         <a href="#" className="hover:text-orange-500 transition">Courses</a>
         <a href="#" className="hover:text-orange-500 transition">Scholarships</a>
