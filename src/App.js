@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import CourseSection from './components/CourseSection';
+import Faculty from './components/Faculty';
+import ConversionTools from './components/ConversionTools';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen">
+      <Navbar />
+      <Hero />
+      <CourseSection />
+      <Faculty />
+      <ConversionTools />
+      
+      {/* Simple Footer */}
+      <footer className="bg-gray-100 py-12 text-center text-gray-500 text-sm">
+        <img src="https://www.codingninjas.com/assets-landing/images/CN-logo.svg" alt="Logo" className="h-6 mx-auto mb-4 grayscale opacity-50" />
+        <p>© 2026 Sunrise Mentors Pvt. Ltd.</p>
+      </footer>
     </div>
   );
 }
